@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/my.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.rotate.min.js"></script>-->
+    <script type="text/javascript" src="js/donghua.js"></script>
+</head>
+<body>
+<div class="container" id="mainBox">
+        <div class="led" id="led-box">
+            <div class="head-img " id="head-box">
+                <div class="circles-L fl" id="cir-L"></div>
+                <div class="circles-R fl" id="cir-R"></div>
+                <!--同时设置浮动和定位，层级以定位为准-->
+                <div class="cover"></div>
+                <div class="my-portrait"></div>
+            </div>
+            <div class="level-line" id="lev-line">
+                <div class="up-line add-height">
+                    <div class="top-line add-width">
+                        <div class="text" id="top-text"><h1></h1><p></p><span><img src="imgs/huojian.png" alt="" width="80px" height="100px"></span></div>
+                    </div>
+                </div>
+                <div class="down-line add-height">
+                    <div class="bottom-line add-width"></div>
+                </div>
+            </div>
+            <div class="end-line" id="e-line"></div>
+            <div class="info" id="my-info">
+                <h1>梅立的简历</h1>
+                <div class="base-info">
+                    <h2>基本信息</h2>
+                    <ul>
+                        <li>个人信息: 梅立/男/26岁</li>
+                        <li>学校: 江汉大学</li>
+                        <li>专业: 生物技术</li>
+                        <li>英语水平: CET-4</li>
+                        <li>个人主页: <a href="www.meili666.top">www.meili666.top</a></li>
+                    </ul>
+                </div>
+                <div class="call-info">
+                    <h2>联系方式</h2>
+                    <ul>
+                        <li>Email: 820855278@qq.com</li>
+                        <li>QQ: 820855278</li>
+                        <li>Phone: 13260623105</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="clothes clearfix">
+        <div class="show" id="show-box">
+            <i class="superman"></i>
+            <div class="skill">
+                <h1><span></span>我目前掌握的技能</h1>
+                <ul class="skill-show clearfix">
+                    <li class="clearfix">
+                        <h2><img src="imgs/1.jpg" alt="" width="100px" height="100px"></h2>
+                        <p class="profile">熟练利用HTML5搭建网页基本框架</p></li>
+                    <li class="clearfix">
+                        <h2><img src="imgs/2.jpg" alt="" width="100px" height="100px"></h2>
+                        <p class="profile">熟练运用css修改标签样式，完成静态布局，熟悉css3新特性，处理各种浏览器兼容性问题</p></li>
+                    <li class="clearfix">
+                        <h2><img src="imgs/3.jpg" alt="" width="100px" height="100px"></h2>
+                        <p class="profile">熟悉原生JS编程，能利用JS操作DOM元素实现网页各种动态效果，熟悉js兼容性处理</p></li>
+                    <li class="clearfix">
+                        <h2><img src="imgs/4.jpg" alt="" width="100px" height="100px"></h2>
+                        <p class="profile">熟悉jquery库，并使用jq替代js实现各种网页效果，简化编程，减少代码量</p></li>
+                    <li class="clearfix">
+                        <h2><img src="imgs/5.jpg" alt="" width="100px" height="100px"></h2>
+                        <p class="profile">能使用Bootstrap框架进行web开发</p></li>
+                    <li class="clearfix">
+                        <h2><img src="imgs/6.jpg" alt="" width="100px" height="100px"></h2>
+                        <p class="profile">了解ajax技术原理，能运用ajax实现前后端的基本交互，懂得XML、JSON、PHP格式的数据处理</p></li>
+                </ul>
+                <h1><span></span>我正在学习的技能</h1>
+                <p><em></em>vue.js及angular.js</p>
+                <p><em></em>移动端web开发</p>
+                <h1><span></span>个人项目</h1>
+                <div class="projects" id="projects-box">
+                    <ul>
+                        <li class="clearfix"><a href=""><img src="imgs/x1.jpg" alt="" width="200px" height="100px" ></a>
+                            <div>
+                                <h3>web动画简历:</h3>
+                                <p>自行设计及编写了web简历页面，用css3 2D动画结合JS定时器实现旋转效果，并对浏览器进行了兼容处理，同时强化了jquery动画animate的应用</p>
+                            </div></li>
+                        <li class="clearfix"><a href=""><img src="imgs/x5.jpg" alt="" width="200px" height="100px" ></a>
+                            <div>
+                                <h3>编写jquery无缝滚动轮播图插件</h3>
+                                <p>自己编写了的一个jq轮播图插件，实现了开头和末尾图片滚动的平滑跳转，可以重复利用</p>
+                            </div></li>
+                        <li class="clearfix"><a href=""><img src="imgs/x2.jpg" alt="" width="200px" height="100px" ></a>
+                            <div>
+                                <h3>仿京东首页</h3>
+                                <p>模仿京东首页布局，并利用原生JS实现京东轮播图效果，研究京东页面布局中的各种小技巧，提升自己网页布局的水平</p>
+                            </div></li>
+                        <li class="clearfix"><a href=""><img src="imgs/x4.jpg" alt="" width="200px" height="100px"></a>
+                            <div>
+                                <h3>仿京东登录及注册页面</h3>
+                                <p>模仿东登录及注册页面布局，并尝试运用JS正则表达式实现客户端的表单验证功能</p>
+                            </div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

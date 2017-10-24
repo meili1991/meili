@@ -1,0 +1,232 @@
+@charset "UTF-8";
+body {
+    background:url(../imgs/bg.jpg) 0 0 repeat;
+}
+.container {
+}
+.led {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    margin-top: -100px;
+}
+.head-img {
+
+}
+.circles-L,.circles-R {
+    width: 100px;
+    height: 200px;
+    background: url(../imgs/bg_green.png) 0 0 no-repeat;
+    /*float: left;*/
+    position: relative;
+}
+.circles-R {
+    background-position: -100px 0;
+    display: none;
+    z-index: 1000;
+}
+.circles-L {
+    /*transform: rotate(180deg);*/
+    transform-origin: right center;
+    -ms-transform-origin:right center; /* IE 9 */
+    -webkit-transform-origin:right center; /* Safari and Chrome */
+    -moz-transform-origin:right center; /* Firefox */
+    -o-transform-origin:right center; /* Opera */
+}
+.circles-R {
+    transform-origin: left center;
+    -ms-transform-origin:left center; /* IE 9 */
+    -webkit-transform-origin:left center; /* Safari and Chrome */
+    -moz-transform-origin:left center; /* Firefox */
+    -o-transform-origin:left center; /* Opera */
+}
+.cover {
+    width: 100px;
+    height: 200px;
+    background:url(../imgs/bg.jpg) 0 0 repeat;
+    /*background-color: red;*/
+    position: relative;
+}
+.my-portrait {
+    width: 140px;
+    height: 140px;
+    background: url(../imgs/head.jpg) 0 0 no-repeat;
+    position: absolute;
+    left: 30px;
+    top: 29px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1001;
+}
+.level-line {
+    border-bottom: 2px solid #212121;
+    border-top: 1px solid #212121;
+    width: 0px;
+    display: none;
+    position: absolute;
+    margin-top: -1.5px;
+    /*overflow: hidden;*/
+    margin-left: 66px;
+}
+.up-line,.down-line {
+    border-left: 3px solid #212121;
+    height: 0px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.down-line {
+    top: 0;
+    right: 0;
+}
+.top-line,.bottom-line{
+    width: 0;
+    position: absolute;
+    left: 0;
+}
+.top-line {
+    border-top: 3px solid #212121;
+    top: 0;
+    overflow: hidden;
+}
+.text {
+    height: 256px;
+    background-color: #ddd;
+    position: relative;
+    top: -296px;
+    padding: 20px;
+}
+.text h1 {
+    font: 700 20px/30px "Microsoft YaHei", "微软雅黑";
+}
+.text p {
+    margin-top: 20px;
+    font: 500 20px/30px "Microsoft YaHei", "微软雅黑";
+}
+.text span {
+    position: absolute;
+    bottom: -65px;
+    left: 50%;
+    margin-left: -40px;
+}
+.bottom-line {
+    border-bottom: 3px solid #212121;
+    bottom: 0;
+}
+.end-line {
+    height: 299px;
+    border-left: 3px solid #000;
+    position: absolute;
+    left: 0;
+    margin-top: -150px;
+    display: none;
+}
+.info {
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    display: none;
+}
+.info h1 {
+    font: 700 20px/40px "微软雅黑",Microsoft YaHei;
+    color: #F0F2F1;
+}
+.base-info,.call-info {
+    margin-top: 20px;
+}
+.base-info a:hover{
+    color: #ffff00;
+}
+.base-info h2,.call-info h2 {
+    font: 700 15px/30px "微软雅黑",Microsoft YaHei;
+}
+.clothes {
+    width: 72%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+.show {
+    width: 100%;
+    background-color: #F0F2F1;
+    position: relative;
+    right: -120%;
+    /*right: 0;*/
+    top: 0;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.superman {
+    position: absolute;
+    left: -114px;
+    top: 150px;
+    width: 114px;
+    height: 39px;
+    background: url(../imgs/smoll.png) -43px -81px no-repeat;
+}
+.skill h1 {
+    border-bottom: 3px solid #71a813;
+    font: 700 20px/40px "微软雅黑",Microsoft YaHei;
+    padding: 10px 0 0 25px;
+    position: relative;
+}
+.skill h1 span {
+    position: absolute;
+    left: 0;
+    top: 21px;
+    width: 16px;
+    height: 19px;
+    background: url(../imgs/smoll.png) 0 0 no-repeat;
+}
+.skill-show li {
+    margin-top: 10px;
+    float: left;
+    width: 50%;
+    /*background-color: pink;*/
+}
+.skill-show li img {
+    box-shadow:3px 3px 3px #aaaaaa;
+}
+.skill-show li h2 {
+    float: left;
+}
+.skill-show li .profile {
+    float: left;
+    width: 60%;
+    font: 15px/30px "微软雅黑",Microsoft YaHei;
+    padding-left: 20px;
+    /*background-color: green;*/
+}
+.skill>p {
+    margin-top: 10px;
+    font: 15px/30px "微软雅黑",Microsoft YaHei;
+    padding-left: 20px;
+    position: relative;
+}
+.skill>p em {
+    width: 14px;
+    height: 14px;
+    background: url(../imgs/smoll.png) -186px 0 no-repeat;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.projects li {
+    margin-top: 20px;
+}
+.projects li a {
+    float: left;
+    box-shadow:3px 3px 3px #aaaaaa;
+}
+.projects li div {
+    float: left;
+    width: 70%;
+    margin-left: 20px;
+}
+.projects h3 {
+    font: 700 15px/30px "微软雅黑",Microsoft YaHei;
+}
